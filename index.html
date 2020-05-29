@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>nautankies</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="phone.css" media="screen and (max-width: 1000px)">
+	<style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Anaheim);
+#slider:before,
+#slider:after{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 4% auto;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    perspective: 1000px;
+
+}
+#slider{
+	 top: 10px;
+}
+
+#carousel{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+    animation-play-state: paused;
+}
+#carousel figure{
+    display: block;
+    position: absolute;
+    width: 186px;
+    height: 116px;
+    left: 10px;
+    top: 35px;
+    background: black;
+    overflow: hidden;
+    border: solid 5px black;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+#slider img{
+    -webkit-filter: grayscale(1);
+    cursor: pointer;
+    transition: all .5s ease;
+    width: 200px;
+    height: 180px;
+
+}
+#slider img:hover{
+    -webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+  </style>
+</head>
+<body>
+	
+	<nav id="navbar">
+		<div id="logo">
+			<img src="me.jpg" alt="nautankies.com">
+		</div>
+		<ul>
+			<li class="item"><a href="#home">Home</a></li>
+			<li class="item"><a href="#services-container">We</a></li>
+			<li class="item"><a href="#client-section">About Us</a></li>
+			<li class="item"><a href="#contact">Contact Us</a></li>
+		</ul>
+	</nav>
+	<section id="home">
+	<h1 class="primary">NAUTANKIES</h1>
+	<br>
+	<br>
+	<p>We're crazy, we're hilarious, we're awesome, we're dirty minded</p>
+	<p>we're always there for each other no matter what.</p>
+	<p>WE ARE BEST FRIENDS</p>
+	<button class="btn" >Let's Introduce</button>
+	</section>
+	<section id="services-container">
+		<h1 class="h-primary center">Gangster girls </h1>
+		<div class="services">
+			<div class="box">
+				<img src="suk.png" alt="">
+				<h2 class="h-secondary center">SUKH</h2>
+				<p class="center">Chota packet bada dhamaka 
+Though by looks you will see a girls who is cute, sweet , "innocent" but inside she is a devil reincarnate(&#128540) 'the mischievous troublemaker', the one who has sources, and is updated about every news, gossip. The one who knows how to pull the right strings. The prankster. </p>
+			</div>
+			<div class="box">
+				<img src="nidhi.png" alt="">
+				<h2 class="h-secondary center">NIDZ</h2>
+				<p class="center">Mai khud ki favourite Hu
+A girl who is considerate, caring, kind, understanding. Who is childish yet mature. A good dancer&#128131, backer and overall a great person. The overenthusiastic one always ready to explore and share. The loud and cheerful one.One who is always there to help everyone.</p>
+			</div>
+			<div class="box">
+				<img src="sej.png" alt="">
+				<h2 class="h-secondary center">SEJU</h2>
+				<p class="center">As pure as her name
+A very loving caring but a really emotional person. A crybaby&#128518. Will cry over small things yet will face the hell with fierce attitude if needed to. A cute, sweet, simple girl. But don't be misled she too is a nautanki. The  Patient and understanding one. A good artist.</p>
+			</div>	
+		</div>
+		<div class="services">
+			<div class="box">
+				<img src="anku.png" alt="">
+				<h2 class="h-secondary center">ANKU</h2>
+				<p class="center">The grumpy one .
+The one who have terrible mood swing. "I am always ready for giving advice and some heavy dose of philosophy"kind of person.
+The lazy one,our panda girl,sleepyhead.She impresses everyone with her non stop bakbak....ज्ञान बाटते फिरती है&#128514
+Music lover.</p>
+			</div>
+			<div class="box">
+				<img src="pd.jpeg" alt="">
+				<h2 class="h-secondary center">PHD</h2>
+				<p class="center">Thodi God thodi mirchi &#x1F336
+A girl with a dynamic personality people often misinterprete her personality as her attitude but once you get to know her , you'll know the real her. Who's favourite hobby is to abuse people whom she loves. Can master anything she wants.The bold one.
+</p>
+			</div>
+			<div class="box">
+				<img src="jas.png" alt="">
+				<h2 class="h-secondary center">JAZ</h2>
+				<p class="center">Koi paheli hu Mai
+A girl who is calm, silent, and mysterious.
+The calm and silent part is only for strangers though. The one who is sincere about work and is a workaholic. You will always find her learning something. "The all rounder"  "शांतीत क्रांती"  The silent one.</p>
+			</div>	
+		</div>
+        </section>
+      
+
+		<section id="client-section">
+			<h1 class="h-primary center">Friendship Forever</h1>
+			<div id="clients">
+				<div class="client-items">
+					<img src="logo5.png" alt="Friendship Forever">
+				</div>
+				<div class="client-items">
+					<img src="logo4.png" alt="Friendship Forever">
+				</div>
+				<div class="client-items">
+					<img src="logo2.png" alt="Friendship Forever">
+				</div>
+				<div class="client-items">
+					<img src="logo4.png" alt="Friendship Forever">
+				</div>
+				<div class="client-items">
+					<img src="logo5.png" alt="Friendship Forever">
+				</div>
+				
+			</div>
+
+  <div class="container" id="slider">
+        <div id="carousel">
+            <figure><img src="we6.jpg" alt=""></figure>
+            <figure><img src="we7.jpeg" alt=""></figure>
+            <figure><img src="nidhi1.jpg" alt=""></figure>
+            <figure><img src="we9.jpg" alt=""></figure>
+            <figure><img src="we1.jpg" alt=""></figure>
+            <figure><img src="we2.jpg" alt=""></figure>
+            <figure><img src="we3.jpg" alt=""></figure>
+            <figure><img src="we4.jpg" alt=""></figure>
+            <figure><img src="we5.jpg" alt=""></figure>
+        </div>
+    </div>
+  </section>
+
+		 
+
+		<section id="contact">
+			<h1 class="h-primary center">Contact Us</h1>
+			<div id="contact-box">
+				<form action="friend.php" method="post">
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input type="text" name="name" id="name"
+						placeholder="enter your name">
+						
+					</div>
+					<div class="form-group">
+						<label for="email">email:</label>
+						<input type="emailt" name="email" id="email"
+						placeholder="enter your email">
+						
+					</div>
+					<div class="form-group">
+						<label for="phone">phone:</label>
+						<input type="phone" name="phone" id="phone"
+						placeholder="enter your phone">
+						
+					</div>
+					<div class="form-group">
+						<label for="message">Message:</label>
+						<textarea name="message" id="message" rows="10"></textarea>
+					
+						
+					</div><br>
+					<input type="submit" value="Submit">
+					
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div class="center">
+				Copyright &copy: www.nautankies.com All rights reserved!
+			</div>
+		</footer>
+
+
+</body>
+</html>

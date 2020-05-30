@@ -4,7 +4,6 @@ $email=filter_input(INPUT_POST, 'email');
 $phone = filter_input(INPUT_POST,'phone');
 $message = filter_input(INPUT_POST,'message');
 if(!empty($name)){
-if(!empty($email)){
 $host = "localhost";
 $dbusername ="root";
 $dbpassword ="";

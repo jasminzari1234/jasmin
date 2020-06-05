@@ -18,7 +18,7 @@ else{
 	$sql="INSERT INTO frnd (name,email,phone,message)
 	values ('$name','$email','$phone','$message')";
 	if($conn->query($sql)){
-		echo "new record is inseted succesfully";
+		echo "new record is inserted succesfully";
 	}
 	else{
 		echo "error:".$sql ."<br>".$conn->error;
